@@ -155,3 +155,38 @@ input[type=button] {
     background-color: var(--app-red);
     color: var(--app-font-color);
 }
+
+/* - - - - - - - - - - - - -
+        FOOTER
+- - - - - - - - - - - - - - */ 
+
+footer {
+    padding: 20px 0 30px;
+    background: linear-gradient(to top left, #54169b, #6928cb);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    padding: 10px 0;
+}
+
+.social a {
+    margin: 0 10px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.fa-brands {
+    transition: 0.1s ease-in-out;
+    font-style: none;
+}
+
+.fa-brands:hover {
+    color: #000;
+    filter: drop-shadow(0 0 5px #1c0534);
+}
+
+#copyright {
+    text-align: right;
+}
