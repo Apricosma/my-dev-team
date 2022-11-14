@@ -140,11 +140,11 @@ header {
 - - - - - - - - - - - - - - */ 
 
 footer {
-    margin-top: 75px;
-    padding: 20px 0 30px;
+    /* padding: 20px 0 30px; */
     background: linear-gradient(to bottom right, #9e5bea, #7a38dc);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer h2 {
@@ -157,20 +157,23 @@ footer h2 {
 
 .social a {
     margin: 0 0.4vw;
-    font-size: 4vw;
+    font-size: 40px;
     text-decoration: none;
 }
 
 #copyright {
-    font-size: 3vw;
+    font-size: 20px;
     text-align: right;
     margin-right: 6vw;
+
 }
 
 .fa-brands, #copyright {
     color: #fff;
     transition: 0.1s ease-in-out;
     font-style: none;
+    padding: 30px 0;
+
 }
 
 .fa-brands:hover {
@@ -201,7 +204,7 @@ footer h2 {
         font-size: 20px;
     }
     #copyright {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
@@ -257,7 +260,7 @@ footer h2 {
 .product-bg {
     width: 100%;
     background-color: #292930;
-    padding: 40px;
+    padding: 100px;
     color: var(--app-font-color);
 }
 
@@ -278,7 +281,7 @@ footer h2 {
 .card p {
     margin: 1px 0;
     font-size: 24px;
-    background-color: rgb(148, 79, 144);
+    background-color: #9e5bea;
     box-shadow: 5px 5px 10px #1b1b20;
     color: var(--app-font-color);
     padding-left: 7px;
