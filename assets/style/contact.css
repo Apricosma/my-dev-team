@@ -139,6 +139,7 @@ input[type=text]:focus, textarea:focus {
 
 textarea {
     margin-bottom: 50px;
+    resize: none;
 }
 
 input[type=button] {
