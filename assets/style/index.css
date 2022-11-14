@@ -19,6 +19,94 @@ body {
     margin-inline: auto;
 }
 
+/* - - - - - - - - - - - - -
+        HEADER
+- - - - - - - - - - - - - - */ 
+
+.title, a {
+    font-size: 24px;
+    height: 60px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+header a {
+    font-size: 24px;
+    font-weight: 300;
+    position: relative;
+    padding: 1px 0;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+:hover::after, header a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 1px, 0);
+}
+
+header a, .title {
+    color: #fff;
+}
+
+li {
+    display: inline;
+    overflow: auto;
+    margin-left: 20px;
+}
+
+/* Adds margin between all elements inside */
+header > * {
+    margin: 0 120px;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(to top left, #97169b75, #c628cb75);
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 0.5);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+
+
+/* - - - - - - - - - - - - -
+        HERO BANNER
+- - - - - - - - - - - - - - */ 
+
+.hero-banner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../media/night-banner.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    box-shadow: 1px 1px 50px;
+}
+
+.hero {
+    color: #fff;
+    text-shadow: 5px 5px 10px #555;
+    font-size: 50px;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
 .flex {
     display: flex;
     align-items: center;
