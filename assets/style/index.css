@@ -73,7 +73,7 @@ li {
 
 /* Adds margin between all elements inside */
 header > * {
-    margin: 0 120px;
+    margin: 0 7vw;
 }
 
 header {
@@ -96,12 +96,13 @@ header {
     min-height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../media/night-banner.jpg"); 
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center center;
     box-shadow: 1px 1px 50px;
 }
 
 .hero {
+    margin: 0px 2vw;
     color: #fff;
     text-shadow: 0px 5px 10px #333;
     font-size: 50px;
@@ -110,6 +111,14 @@ header {
     top: 50%;
     left: 35%;
     transform: translate(-50%, -75%);
+}
+
+.hero h1 {
+    font-size: 6vw;
+}
+
+.hero p {
+    font-size: 4vw;
 }
 
 .flex {
@@ -161,8 +170,9 @@ input[type=button] {
 - - - - - - - - - - - - - - */ 
 
 footer {
+    margin-top: 75px;
     padding: 20px 0 30px;
-    background: linear-gradient(to top left, #54169b, #6928cb);
+    background: linear-gradient(to bottom right, #9e5bea, #7a38dc);
     display: flex;
     justify-content: space-between;
 }
@@ -171,22 +181,74 @@ footer h2 {
     padding: 10px 0;
 }
 
+.social {
+    margin-left: 6vw;
+}
+
 .social a {
-    margin: 0 10px;
-    font-size: 50px;
+    margin: 0 0.4vw;
+    font-size: 4vw;
     text-decoration: none;
 }
 
-.fa-brands {
+#copyright {
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 6vw;
+}
+
+.fa-brands, #copyright {
+    color: #fff;
     transition: 0.1s ease-in-out;
     font-style: none;
 }
 
 .fa-brands:hover {
-    color: #000;
-    filter: drop-shadow(0 0 5px #1c0534);
+    color: #fff;
+    filter: drop-shadow(0 0 5px #777);
 }
 
-#copyright {
-    text-align: right;
+/* - - - - - - - - - - - - - - - - - 
+            SCREEN SIZES
+- - - - - - - - - - - - - - - - - - */
+
+
+/* 480px and up */
+@media only screen and (max-width: 480px) {
+
+    /* Adds margin between all elements inside */
+    header > * {
+        margin: 0 6vw;
+    }
+    .hero #welcome {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Changes footer elements size accordingly */
+    .social a {
+        font-size: 20px;
+    }
+    #copyright {
+        font-size: 15px;
+    }
+}
+
+/* 768px and up */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* 992px and up */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* 1200px and up */
+@media only screen and (min-width: 1200px) {
+
 }
