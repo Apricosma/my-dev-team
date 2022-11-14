@@ -88,3 +88,15 @@ input[type=button] {
 input[type=button]:hover {
     background-color: #6827bd;
 }
+
+@media (max-width: 1300px) {
+    .form-section {
+        width: 65%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-section {
+        width: 90%;
+    }
+}
