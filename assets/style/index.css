@@ -254,6 +254,16 @@ footer h2 {
     margin-right: auto;
 }
 
+@media (max-width: 850px) {
+    .about-us {
+        padding: 25px;
+    }
+
+    .about-us h1 {
+        margin-top: 25px;
+    }
+}
+
 /* - - - - - - - - - - - - - - */
 /* Products                    */
 /* - - - - - - - - - - - - - - */
