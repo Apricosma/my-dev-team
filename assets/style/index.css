@@ -190,7 +190,7 @@ footer h2 {
 
 #copyright {
     text-align: right;
-=======
+}
 /* - - - - - - - - - - - - - - */
 /* About-us                    */
 /* - - - - - - - - - - - - - - */
@@ -275,5 +275,6 @@ footer h2 {
     width: 100%;
     height: 100%;
     object-fit: fill;
+    padding: 15px;
     border-radius: 5px 5px 0 0;
 }
