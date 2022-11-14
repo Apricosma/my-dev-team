@@ -90,6 +90,26 @@ header {
     justify-content: space-between;
 }
 
+.sidebar i {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    margin-top: 20px;
+    display: none;
+}
+
+/* 768px and up */
+@media only screen and (max-width: 768px) {
+    .sidebar ul {
+        display: none;
+    }
+
+    .sidebar i {
+        display: initial;
+        cursor: pointer;
+    }
+}
+
 
 /* - - - - - - - - - - - - - - */
 /* Form                        */
