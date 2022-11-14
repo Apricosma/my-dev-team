@@ -88,8 +88,10 @@ header {
 - - - - - - - - - - - - - - */ 
 
 .hero-banner {
-    min-height: 70vh;
-    background-size: auto;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../media/night-banner.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center center;
     box-shadow: 1px 1px 50px;
 }
@@ -97,9 +99,12 @@ header {
 .hero {
     color: #fff;
     text-shadow: 5px 5px 10px #555;
-    text-align: center;
     font-size: 50px;
     user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
 }
 
 .flex {
