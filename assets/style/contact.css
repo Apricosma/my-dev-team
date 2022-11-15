@@ -160,6 +160,7 @@ input[type=text]:focus, textarea:focus {
 textarea {
     margin-bottom: 50px;
     resize: none;
+    height: 175px;
 }
 
 input[type=button] {
@@ -189,6 +190,10 @@ input[type=button]:hover {
 @media (max-width: 600px) {
     .form-section {
         width: 90%;
+    }
+
+    textarea {
+        height: 100px;
     }
 }
 
